@@ -8,20 +8,6 @@ import json
 
 last_updated_string = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
-# def alias_name(name):
-#     alias_list=[]
-#     subname = name.split(' ')
-#     l = len(subname)
-#     if l>=3:
-#         name1 = subname[l-1] + " " + subname[0]
-#         name2 = subname[l-2] + " " + subname[0]
-#         alias_list.append(name1)
-#         alias_list.append(name2)
-#     if l==2:
-#         name1 = subname[1] + " " + subname[0]
-#         alias_list.append(name1)
-#     return alias_list
-
 def alias_name(name):
     alias_list=[]
     rearrangedNamelist=name.split(' ')
@@ -108,7 +94,6 @@ for i in data:
     try:
         if d["name"]!="":
             mylist.append(d)
-            #print("k")
     except:
         pass
     
